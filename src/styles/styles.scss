@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    box-sizing: border-box;
+    font-size: .825rem;
+    scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.view {
+    height: 100%;
+
+    &__content {
+        margin-top: 1.75rem;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        margin-bottom: .75rem;
+    }
+}
+
+
+.base__btn-link {
+    text-decoration: none;
+}
+
+.base__link {
+    text-decoration: none;
+}
+
+.text__white {
+    color: #d1d1d1;
+}
+
+
+
+// Removing the asterisk symbol from required form fields
+.el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:before {
+    content: "";
+    color: #F56C6C;
+    margin-right: 4px;
+    display: none;
+}
