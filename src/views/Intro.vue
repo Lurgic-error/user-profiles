@@ -3,12 +3,12 @@
         <div class="view__content">
             <h1>Profiler</h1>
             <el-row>
-                <el-button type="primary">
-                    <router-link class="base__btn-link text__white" :to="{ name: 'user-registration' }">Sign Up</router-link>
+                <el-button type="primary" @click="$router.push({ name: 'user-registration' })">
+                    Sign Up
                 </el-button>
-                
-                <el-button plain type="primary" >
-                <router-link class="base__btn-link" :to="{ name: 'user-login' }">Sign In</router-link>
+
+                <el-button plain type="primary" @click="$router.push({ name: 'user-login' })">
+                    Login
                 </el-button>
 
             </el-row>
